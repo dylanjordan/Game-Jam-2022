@@ -70,7 +70,7 @@ public class Noise : MonoBehaviour
                     {
                         map[x, y] = 1;
                     }
-                    else
+                    else 
                     {
                         int surroundingGroundCount = GetSurroundingGroundCount(x, y);
 
@@ -128,7 +128,7 @@ public class Noise : MonoBehaviour
 
         for (int neighX = gridX - 1; neighX <= gridX + 1; neighX++)
         {
-            for (int neighY = gridY - 1; neighX <= gridY + 1; neighY++)
+            for (int neighY = gridY - 1; neighY <= gridY + 1; neighY++)
             {
                 if (neighX >= 0 && neighX < width && neighY >= 0 && neighY < height)
                 {

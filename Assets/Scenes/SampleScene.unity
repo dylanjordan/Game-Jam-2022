@@ -320,7 +320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 256
   height: 256
-  smoothAmount: 1
+  smoothAmount: 7
   randomFillPercentage: 53
   groundTile: {fileID: 11400000, guid: c5dec099202954c4dbff47f0b7d32a73, type: 2}
   hillTile: {fileID: 11400000, guid: b9c094c317199e4419fe403b2f0f764d, type: 2}
