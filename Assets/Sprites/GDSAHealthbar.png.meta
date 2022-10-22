@@ -121,9 +121,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 96
         width: 160
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,9 +142,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 64
         width: 160
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,6 +154,48 @@ TextureImporter:
       bones: []
       spriteID: f2d8d9e192fe5954984b2e4a08a0526c
       internalID: 1975534415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDSAHealthbar_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdddd797ca6b154abeb85ecf7111d59
+      internalID: -1827794869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDSAHealthbar_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 160
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4967fa89816f8cf4fb15d9ee0a9f12f8
+      internalID: -209433065
       vertices: []
       indices: 
       edges: []
@@ -170,7 +212,9 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       GDSAHealthbar_1: 1975534415
+      GDSAHealthbar_2: -1827794869
       GDSAHealthbar_0: -674044972
+      GDSAHealthbar_3: -209433065
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
