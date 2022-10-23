@@ -9,6 +9,7 @@ public class EnemySpawns : MonoBehaviour
     private int spawners;
     [SerializeField] Vector2 lowerBounds;
     [SerializeField] Vector2 upperBounds;
+    public int enemyCap;
     // Start is called before the first frame update
     void Start()
     {
