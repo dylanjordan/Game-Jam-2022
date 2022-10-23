@@ -25,8 +25,13 @@ using Thread = System.Threading.Thread;
 /// </summary>
 [HelpURL("http://arongranberg.com/astar/docs/class_astar_path.php")]
 public class AstarPath : VersionedMonoBehaviour {
-	/// <summary>The version number for the A* %Pathfinding Project</summary>
-	public static readonly System.Version Version = new System.Version(4, 2, 17);
+
+    private void Start()
+    {
+		StartCoroutine(StartScan());
+    }
+    /// <summary>The version number for the A* %Pathfinding Project</summary>
+    public static readonly System.Version Version = new System.Version(4, 2, 17);
 
 	/// <summary>Information about where the package was downloaded</summary>
 	public enum AstarDistribution { WebsiteDownload, AssetStore, PackageManager };
@@ -214,7 +219,7 @@ public class AstarPath : VersionedMonoBehaviour {
 	/// See: <see cref="Scan"/>
 	/// See: <see cref="ScanAsync"/>
 	/// </summary>
-	public bool scanOnStartup = true;
+	public bool scanOnStartup = false;
 
 	/// <summary>
 	/// Do a full GetNearest search for all graphs.
@@ -2160,4 +2165,10 @@ public class AstarPath : VersionedMonoBehaviour {
 
 		return nearestNode;
 	}
+
+	IEnumerator StartScan()
+    {
+		yield return new WaitForSeconds(2);
+		Scan();
+    }
 }
