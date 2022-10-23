@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 33a2328edaaa70849aca172f0aa213a4
+guid: f428e623b937f4c498bc0b7656e75a7b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Game_Jam_2022_Sprites_0
+      name: sMonster_0_0
       rect:
         serializedVersion: 2
         x: 7
-        y: 51
+        y: 83
         width: 17
-        height: 24
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,19 +131,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97dc842353bfc574a9963538cb670a92
-      internalID: 1090465534
+      spriteID: 8c89bdeb1be544e4dadfe759961639f5
+      internalID: 604399265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_Jam_2022_Sprites_1
+      name: sMonster_0_1
       rect:
         serializedVersion: 2
-        x: 31
-        y: 50
-        width: 17
+        x: 30
+        y: 82
+        width: 18
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,19 +152,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 147f27c1fdca17349ae356b35cc2f03a
-      internalID: -1616519390
+      spriteID: 2e80258a5eeb8ed419ca9dc1c8d8f4cc
+      internalID: 1269411990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_Jam_2022_Sprites_2
+      name: sMonster_0_2
       rect:
         serializedVersion: 2
         x: 54
-        y: 50
-        width: 17
+        y: 82
+        width: 18
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,18 +173,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfc38af73ac4fbf45a9cf4d92bd825bb
-      internalID: 1061320071
+      spriteID: 8fab3a36fccb91d4aa89bae441157dec
+      internalID: 1527622105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_Jam_2022_Sprites_3
+      name: sMonster_0_3
       rect:
         serializedVersion: 2
         x: 78
-        y: 51
+        y: 83
         width: 17
         height: 25
       alignment: 0
@@ -194,19 +194,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 518113addd6a61c469f244b77dbdb376
-      internalID: -1490186987
+      spriteID: a126ee9f67693584b9dc37d2828486df
+      internalID: -2097655637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_Jam_2022_Sprites_4
+      name: sMonster_0_4
       rect:
         serializedVersion: 2
-        x: 102
-        y: 50
-        width: 17
+        x: 101
+        y: 82
+        width: 18
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -215,19 +215,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 758906bddc3904042bc2a76b810fd27b
-      internalID: 1595146676
+      spriteID: 2c60b9b8c0ab4be4e997b034f93d03b8
+      internalID: -1788543265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_Jam_2022_Sprites_5
+      name: sMonster_0_5
       rect:
         serializedVersion: 2
         x: 125
-        y: 50
-        width: 17
+        y: 82
+        width: 18
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -236,82 +236,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a30e3329432bb0c4bae96a01744f2e70
-      internalID: -1219371098
+      spriteID: 8170553652b1cfe42ad23ca94b747e1a
+      internalID: 1624718507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_Jam_2022_Sprites_6
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 36
-        width: 4
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e387999629277464282dc965e674063d
-      internalID: 112793344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game_Jam_2022_Sprites_7
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 35
-        width: 7
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2422fa432f62517498f2df47f6d44ffa
-      internalID: -1807509534
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game_Jam_2022_Sprites_8
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 35
-        width: 4
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7b744f40b751514185113c146aae2e7
-      internalID: -1897656288
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game_Jam_2022_Sprites_9
+      name: sMonster_0_6
       rect:
         serializedVersion: 2
         x: 7
-        y: 2
-        width: 16
+        y: 34
+        width: 15
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -320,19 +257,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc6f9116d593bfc4f9fa94f8efd74468
-      internalID: 1501414927
+      spriteID: 2511e0aced8c049418a36b6d9f1a2dac
+      internalID: 11171544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_Jam_2022_Sprites_10
+      name: sMonster_0_7
       rect:
         serializedVersion: 2
-        x: 27
-        y: 1
-        width: 19
+        x: 29
+        y: 33
+        width: 16
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -341,19 +278,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a40eafee29d8b6c4f8782239741101d6
-      internalID: 1600622548
+      spriteID: aae9444550fb1cf4c9bc566ccf51b565
+      internalID: 1731800903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_Jam_2022_Sprites_11
+      name: sMonster_0_8
       rect:
         serializedVersion: 2
-        x: 51
-        y: 1
-        width: 18
+        x: 53
+        y: 33
+        width: 15
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -362,19 +299,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c83e1a7626d3f444d994e6581b61ebab
-      internalID: 1150853262
+      spriteID: d57d749ed7417f94fad5262c7260e504
+      internalID: 1657599672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_Jam_2022_Sprites_12
+      name: sMonster_0_9
       rect:
         serializedVersion: 2
         x: 81
-        y: 1
-        width: 18
+        y: 33
+        width: 15
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -383,19 +320,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e32b8d207d8ee3c4c94b353d67d5e9ab
-      internalID: 401502043
+      spriteID: b54178a8137f504478b329177f4bd75e
+      internalID: -144929046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_Jam_2022_Sprites_13
+      name: sMonster_0_10
       rect:
         serializedVersion: 2
         x: 104
-        y: 1
-        width: 19
+        y: 33
+        width: 16
         height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -404,19 +341,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0857cc83dc0259f419b83b508f7cf8a3
-      internalID: 1374442080
+      spriteID: 9492f0ab900a04349b3492d8c4f814df
+      internalID: -857698307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Game_Jam_2022_Sprites_14
+      name: sMonster_0_11
       rect:
         serializedVersion: 2
         x: 127
-        y: 2
-        width: 16
+        y: 34
+        width: 14
         height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -425,8 +362,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a41bc17c34d30fb45b94a3f0f803f69a
-      internalID: 1132834007
+      spriteID: 928cf741f54650f44ab3db7cff766fc5
+      internalID: -1093180335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sMonster_0_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 3
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254ae697081d2504582259131165995a
+      internalID: -20531862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sMonster_0_13
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 3
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533b1e3c1319b204f954e77432940c4f
+      internalID: -1370593616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sMonster_0_14
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 3
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39ecb75bd43d8245a7247f95febf226
+      internalID: 384132476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sMonster_0_15
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 3
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0f25261665c02478d119c0ead57a35
+      internalID: 679805256
       vertices: []
       indices: 
       edges: []
@@ -442,21 +463,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Game_Jam_2022_Sprites_14: 1132834007
-      Game_Jam_2022_Sprites_5: -1219371098
-      Game_Jam_2022_Sprites_2: 1061320071
-      Game_Jam_2022_Sprites_3: -1490186987
-      Game_Jam_2022_Sprites_9: 1501414927
-      Game_Jam_2022_Sprites_1: -1616519390
-      Game_Jam_2022_Sprites_10: 1600622548
-      Game_Jam_2022_Sprites_6: 112793344
-      Game_Jam_2022_Sprites_0: 1090465534
-      Game_Jam_2022_Sprites_7: -1807509534
-      Game_Jam_2022_Sprites_4: 1595146676
-      Game_Jam_2022_Sprites_11: 1150853262
-      Game_Jam_2022_Sprites_8: -1897656288
-      Game_Jam_2022_Sprites_12: 401502043
-      Game_Jam_2022_Sprites_13: 1374442080
+      sMonster_0_4: -1788543265
+      sMonster_0_10: -857698307
+      sMonster_0_12: -20531862
+      sMonster_0_3: -2097655637
+      sMonster_0_2: 1527622105
+      sMonster_0_13: -1370593616
+      sMonster_0_9: -144929046
+      sMonster_0_0: 604399265
+      sMonster_0_11: -1093180335
+      sMonster_0_14: 384132476
+      sMonster_0_8: 1657599672
+      sMonster_0_6: 11171544
+      sMonster_0_7: 1731800903
+      sMonster_0_5: 1624718507
+      sMonster_0_1: 1269411990
+      sMonster_0_15: 679805256
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
