@@ -1,24 +1,20 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    private bool canSpawn;
+    private bool canSpawn = true;
     private float distance;
+    private float spawnRate;
     Vector2 playerPos;
     Vector2 spawnerPosition;
     // Update is called once per frame
 
-    private void Start()
-    {
-        canSpawn = true;
-    }
-    
     void FixedUpdate()
     {
         playerPos = PlayerMovement.instance.transform.position;
         spawnerPosition = transform.position;
+        
         if (canSpawn)
         {
             StartCoroutine(CalculateDist());
@@ -30,7 +26,7 @@ public class Spawner : MonoBehaviour
         distance = Vector3.Distance(playerPos, spawnerPosition);
         SpawnCheck();
         canSpawn = false;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(spawnRate);
         canSpawn = true;
     }
 
@@ -40,6 +36,7 @@ public class Spawner : MonoBehaviour
         if (distance > range)
         {
             Spawn();
+
         }
         else
         {
@@ -53,10 +50,13 @@ public class Spawner : MonoBehaviour
         if (spawn == 1)
         {
             Debug.Log("Will Spawn");
+            canSpawn = false;
         }
         else
         {
             Debug.Log("Will not Spawn");
         }
     }
+
+  
 }
