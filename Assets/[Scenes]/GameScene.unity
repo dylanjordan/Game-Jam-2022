@@ -580,6 +580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0701864427fe7c249a414d12c847601e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aiStats: {fileID: 502015191}
   ai: {fileID: 502015194}
   currency: 5
   maxHealth: 2
