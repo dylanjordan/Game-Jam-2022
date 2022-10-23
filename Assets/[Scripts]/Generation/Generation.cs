@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class Noise : MonoBehaviour
+public class Generation : MonoBehaviour
 {
     [Header("Grid Settings")]
     public int width = 256;
@@ -26,7 +26,7 @@ public class Noise : MonoBehaviour
     private void Start()
     {
         perlinHeightList = new int[width];
-        Generation();
+        MapGeneration();
     }
     public int[,] GenerateArray(int width, int height, bool empty)
     {
@@ -106,7 +106,7 @@ public class Noise : MonoBehaviour
         }
     }
 
-    void Generation()
+    void MapGeneration()
     {
         seed = Random.Range(1, 100);
         clearMap();

@@ -1597,15 +1597,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GDSATileset_52: -267340690
+      GDSATileset_62: 1843844005
       GDSATileset_24: -164443789
       GDSATileset_15: 2094730841
-      GDSATileset_62: 1843844005
+      GDSATileset_52: -267340690
       GDSATileset_59: -805243209
       GDSATileset_36: 459908514
       GDSATileset_38: 337132429
       GDSATileset_21: 1484636716
-      GDSATileset_66: 662863814
       GDSATileset_28: 954213022
       GDSATileset_45: -887493194
       GDSATileset_10: 1518782502
@@ -1614,7 +1613,6 @@ TextureImporter:
       GDSATileset_27: -89324572
       GDSATileset_30: -1012012778
       GDSATileset_4: -729560482
-      GDSATileset_44: 1680125032
       GDSATileset_53: 1080816475
       GDSATileset_50: -126719725
       GDSATileset_25: 246536930
@@ -1623,12 +1621,13 @@ TextureImporter:
       GDSATileset_18: -891947063
       GDSATileset_67: -1021783802
       GDSATileset_42: -1227907973
-      GDSATileset_60: 1169169617
+      GDSATileset_44: 1680125032
       GDSATileset_26: 1973149290
       GDSATileset_12: -1425609498
       GDSATileset_68: -1069350626
       GDSATileset_22: 1353924259
       GDSATileset_69: 680563308
+      GDSATileset_60: 1169169617
       GDSATileset_32: 2086337557
       GDSATileset_63: -47446363
       GDSATileset_11: -518961326
@@ -1641,6 +1640,7 @@ TextureImporter:
       GDSATileset_5: 408397763
       GDSATileset_7: 20496223
       GDSATileset_39: -641939254
+      GDSATileset_17: 979977251
       GDSATileset_9: -879281205
       GDSATileset_20: 1982588139
       GDSATileset_57: -379027949
@@ -1662,11 +1662,11 @@ TextureImporter:
       GDSATileset_29: 780741751
       GDSATileset_8: 639995250
       GDSATileset_48: 804539939
-      GDSATileset_17: 979977251
+      GDSATileset_31: 670302910
       GDSATileset_19: 414044887
       GDSATileset_46: 216248842
-      GDSATileset_31: 670302910
       GDSATileset_40: 164606975
+      GDSATileset_66: 662863814
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
