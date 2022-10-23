@@ -18,9 +18,6 @@ public class SmallEnemy : MonoBehaviour
 
     public int damage;
     public bool canSeePlayer;
-
-    [Header("Follow Player")]
-    public bool follow;
     public float speed;
 
     [Header("Charge at Player")]
@@ -36,11 +33,15 @@ public class SmallEnemy : MonoBehaviour
     public float reloadTime;
     float reloadtimer;
 
-    [Header("Shoot at Player")]
+    [Header("Sounds")]
     [SerializeField] AudioClip hurtSound;
     [SerializeField] AudioClip deathSound;
     [SerializeField] AudioClip spawnSound;
     [SerializeField] AudioClip shootSound;
+
+    [Header("Animation Stuff")]
+    Animator animator;
+    bool enemyAttacking;
 
 
     // Start is called before the first frame update
@@ -49,7 +50,9 @@ public class SmallEnemy : MonoBehaviour
         health = maxHealth;
         healthbar.maxValue = maxHealth;
         healthbar.value = health;
-        player = GetComponent<PlayerMovement>().gameObject;
+        player = FindObjectOfType<PlayerMovement>().gameObject;
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -60,13 +63,10 @@ public class SmallEnemy : MonoBehaviour
             UpdateHealthBar();
         }
 
-        
+        Follow();
         if (canSeePlayer)
         {
-            if (follow)
-            {
-                Follow();
-            }
+            
 
             if (charge)
             {
@@ -97,7 +97,8 @@ public class SmallEnemy : MonoBehaviour
     void Follow()
     {
         Vector3 direction = player.transform.position - transform.position;
-
+        animator.SetFloat("moveX", direction.x);
+        animator.SetFloat("moveY", direction.y);
         rb.velocity = direction.normalized * speed * Time.deltaTime;
     }
 

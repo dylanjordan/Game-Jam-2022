@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 913466977141266928}
   - component: {fileID: 913466977141266935}
   - component: {fileID: 913466977141266932}
+  - component: {fileID: 8779758889141252677}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -228,9 +229,12 @@ MonoBehaviour:
   maxHealth: 10
   healthBar: {fileID: 6083216425525230070}
   invicibilityTime: 0.5
+  currency: 0
   hurtSound: {fileID: 0}
   shootSound: {fileID: 0}
   walkSound: {fileID: 0}
+  deathSound: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!114 &913466977141266932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +249,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 3849633816568343622, guid: b06faef12a5ddbf478a18b956cc9d89f, type: 3}
   projectileSpeed: 40
+--- !u!95 &8779758889141252677
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913466977141266931}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 67f2f7673809a5a468c904099f07755d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &913466976441162727
 PrefabInstance:
   m_ObjectHideFlags: 0

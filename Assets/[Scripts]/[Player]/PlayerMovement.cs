@@ -29,6 +29,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] AudioClip walkSound;
     [SerializeField] AudioClip deathSound;
 
+    [Header("Animation Stuff")]
+    public Animator animator;
+
 
     void Awake()
     {
@@ -36,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
         playerActions = new PlayerActions();
 
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         if (rb == null)
         {
             Debug.LogError("Rigidbody2D is NULL!");
@@ -67,6 +71,8 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         moveInput = playerActions.PlayerInput.Movement.ReadValue<Vector2>();
+        animator.SetFloat("moveX", moveInput.x);
+        animator.SetFloat("moveY", moveInput.y);
         rb.velocity = moveInput * speed;
     }
 
