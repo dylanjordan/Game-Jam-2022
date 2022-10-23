@@ -80,6 +80,8 @@ public class SmallEnemy : MonoBehaviour
             aiStats.maxSpeed = 2;
         }
 
+        Animations();
+
 
 
 
@@ -106,17 +108,17 @@ public class SmallEnemy : MonoBehaviour
 
     void Follow()
     {
-
-        //Vector3 direction = player.transform.position - transform.position;
-        //Debug.LogWarning("Following Player");
-        //animator.SetFloat("moveX", direction.x);
-        //animator.SetFloat("moveY", direction.y);
         seeker.target = playerPos;
 
         Charge();
     }
 
-
+    void Animations()
+    {
+        Vector3 direction = seeker.target.position - transform.position;
+        animator.SetFloat("moveX", direction.x);
+        animator.SetFloat("moveY", direction.y);
+    }
 
     void Charge()
     {
@@ -134,7 +136,7 @@ public class SmallEnemy : MonoBehaviour
     IEnumerator runningTime()
     {
         aiStats.maxSpeed = 10;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         aiStats.maxSpeed = 0;
     }
     //void Shoot()
