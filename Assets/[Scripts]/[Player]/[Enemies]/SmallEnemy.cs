@@ -8,6 +8,8 @@ public class SmallEnemy : MonoBehaviour
     GameObject player;
     private Rigidbody2D rb;
 
+    public int currency = 5;
+
     [Header("Health")]
     int health;
     public int maxHealth = 2;
@@ -33,7 +35,12 @@ public class SmallEnemy : MonoBehaviour
     public float bulletSpeed;
     public float reloadTime;
     float reloadtimer;
-    
+
+    [Header("Shoot at Player")]
+    [SerializeField] AudioClip hurtSound;
+    [SerializeField] AudioClip deathSound;
+    [SerializeField] AudioClip spawnSound;
+    [SerializeField] AudioClip shootSound;
 
 
     // Start is called before the first frame update
@@ -75,11 +82,16 @@ public class SmallEnemy : MonoBehaviour
 
     public void Hurt(int value)
     {
+        health -= value;
         if (!showHealthbar)
         {
             healthbar.gameObject.SetActive(true);
         }
 
+        if (health <= 0)
+        {
+            Die();
+        }
     }
 
     void Follow()
@@ -103,22 +115,37 @@ public class SmallEnemy : MonoBehaviour
 
     void Shoot()
     {
-        Vector3 direction = player.transform.position - transform.position;
+        reloadtimer += Time.deltaTime;
+        if (reloadtimer >= reloadTime)
+        {
+            Vector3 direction = player.transform.position - transform.position;
 
-        GameObject obj = Instantiate(bullet, transform.position, Quaternion.identity);
-        obj.GetComponent<Rigidbody2D>().velocity = direction.normalized * bulletSpeed;
+            GameObject obj = Instantiate(bullet, transform.position, Quaternion.identity);
+            obj.GetComponent<Rigidbody2D>().velocity = direction.normalized * bulletSpeed;
 
-        Destroy(obj, 5f);
+            PlaySoundEffect(shootSound);
+            Destroy(obj, 5f);
+        }
+        
     }
 
     void Die()
     {
-
+        PlaySoundEffect(deathSound);
+        Destroy(this.gameObject);
     }
 
     void UpdateHealthBar()
     {
+        healthbar.value = health;
+    }
 
+    void PlaySoundEffect(AudioClip sound)
+    {
+        if (sound)
+        {
+            AudioSource.PlayClipAtPoint(sound, this.transform.position);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

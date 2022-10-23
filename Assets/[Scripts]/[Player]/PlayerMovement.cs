@@ -16,11 +16,19 @@ public class PlayerMovement : MonoBehaviour
     bool canBeHit = true;
     public float invicibilityTime;
     float invicibilityTimer;
-    
+
+    public int currency;
 
     [Header("GameOver")]
     GameObject gameoverScreen;
     static public PlayerMovement instance;
+
+    [Header("Sound Effects")]
+    [SerializeField] AudioClip hurtSound;
+    [SerializeField] AudioClip shootSound;
+    [SerializeField] AudioClip walkSound;
+    [SerializeField] AudioClip deathSound;
+
 
     void Awake()
     {
@@ -87,6 +95,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (canBeHit)
         {
+            PlaySoundEffect(hurtSound);
             currentHealth -= val;
             
         }
@@ -99,6 +108,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Die()
     {
+        PlaySoundEffect(deathSound);
         if (gameoverScreen)
         {
             gameoverScreen.SetActive(true);
@@ -109,4 +119,13 @@ public class PlayerMovement : MonoBehaviour
         }
         
     }
+
+    void PlaySoundEffect(AudioClip sound)
+    {
+        if (sound)
+        {
+            AudioSource.PlayClipAtPoint(sound, this.transform.position);
+        }
+    }
+   
 }
