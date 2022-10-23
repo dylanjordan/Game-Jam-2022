@@ -10,7 +10,7 @@ public class SmallEnemy : MonoBehaviour
     public AIPath aiStats;
     public OverallEnemyPathfindingAI ai;
 
-    Transform playerPos;
+    public Transform playerPos;
 
     public int currency = 5;
 

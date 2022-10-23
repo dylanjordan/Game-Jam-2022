@@ -4,13 +4,12 @@ using UnityEngine;
 using Pathfinding;
 public class OverallEnemyPathfindingAI : MonoBehaviour
 {
-    public Transform bar;
 
     public float range = 10.0f;
     public bool isInRange;
     private AIDestinationSetter seeker;
 
-    Vector2 playerPos;
+    Transform playerPos;
 
     private void Start()
     {
@@ -19,16 +18,16 @@ public class OverallEnemyPathfindingAI : MonoBehaviour
     }
     private void Update()
     {
-        playerPos = PlayerMovement.instance.transform.position;
+        playerPos = PlayerMovement.instance.transform;
     }
 
     private void FixedUpdate()
     {
         float range = 15.0f;
-        if (Vector3.Distance(playerPos, transform.position) >= range)
+        if (Vector3.Distance(playerPos.position, transform.position) >= range)
         {
             Debug.LogWarning("Player is NOT in range");
-            seeker.target = bar;
+            seeker.target = playerPos;
             isInRange = false;
         }
         else
