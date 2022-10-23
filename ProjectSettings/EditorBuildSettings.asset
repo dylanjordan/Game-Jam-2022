@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/[Scenes]/MainMenu.unity
     guid: afe9630a49815514bb76902816bba790
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/[Scenes]/Level Loader.unity
+    guid: 296fcb378a1068a4183bd639ad20b125
+  - enabled: 1
+    path: Assets/[Scenes]/GameScene.unity
+    guid: c097a67ecf58c0b409d40c5ecdb50ee7
   m_configObjects: {}

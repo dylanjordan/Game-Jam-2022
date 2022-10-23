@@ -20,10 +20,11 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("GameOver")]
     GameObject gameoverScreen;
-
+    static public PlayerMovement instance;
 
     void Awake()
     {
+        instance = this;
         playerActions = new PlayerActions();
 
         rb = GetComponent<Rigidbody2D>();

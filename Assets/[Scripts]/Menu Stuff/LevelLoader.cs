@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class LevelLoader : MonoBehaviour
 {
     public Slider slider;
+    public string sceneName = "GameScene";
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class LevelLoader : MonoBehaviour
     IEnumerator SceneLoader()
     {
         Debug.Log("Loading Scene");
-        AsyncOperation operation = SceneManager.LoadSceneAsync("MainMenu");
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
         //SceneManager.GetActiveScene().buildIndex + 1)
         //operation.allowSceneActivation = false;
         while (!operation.isDone)
