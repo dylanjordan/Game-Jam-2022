@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Pathfinding;
 
 public class SmallEnemy : MonoBehaviour
 {
+    AIDestinationSetter seeker;
+    public OverallEnemyPathfindingAI ai;
+
+    Transform playerPos;
     GameObject player;
     private Rigidbody2D rb;
 
@@ -47,6 +52,7 @@ public class SmallEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        seeker = GetComponent<AIDestinationSetter>();
         health = maxHealth;
         healthbar.maxValue = maxHealth;
         healthbar.value = health;
@@ -58,12 +64,17 @@ public class SmallEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        playerPos = PlayerMovement.instance.transform;
+
         if (showHealthbar)
         {
             UpdateHealthBar();
         }
 
-        Follow();
+        if (ai.GetRangeBool())
+        {
+            Follow();
+        }
         if (canSeePlayer)
         {
             
@@ -96,10 +107,14 @@ public class SmallEnemy : MonoBehaviour
 
     void Follow()
     {
-        Vector3 direction = player.transform.position - transform.position;
-        animator.SetFloat("moveX", direction.x);
-        animator.SetFloat("moveY", direction.y);
-        rb.velocity = direction.normalized * speed * Time.deltaTime;
+        
+        //Vector3 direction = player.transform.position - transform.position;
+        //Debug.LogWarning("Following Player");
+        //animator.SetFloat("moveX", direction.x);
+        //animator.SetFloat("moveY", direction.y);
+        seeker.target = playerPos;
+        
+
     }
 
     void Charge()
