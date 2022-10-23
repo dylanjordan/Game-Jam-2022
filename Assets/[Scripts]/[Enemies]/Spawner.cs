@@ -3,22 +3,35 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    EnemySpawns enemy;
     private bool canSpawn = true;
     private float distance;
     private float spawnRate;
+
+    private int enemyCap;
+    private int enemyNum;
     Vector2 playerPos;
     Vector2 spawnerPosition;
     // Update is called once per frame
 
+    private void Update()
+    {
+        enemyCap = enemy.GetEnemyCap();
+        enemyNum = enemy.GetEnemyCount();
+    }
     void FixedUpdate()
     {
-        playerPos = PlayerMovement.instance.transform.position;
-        spawnerPosition = transform.position;
-        
-        if (canSpawn)
+        if (checkCanSpawn())
         {
-            StartCoroutine(CalculateDist());
+            playerPos = PlayerMovement.instance.transform.position;
+            spawnerPosition = transform.position;
+
+            if (canSpawn)
+            {
+                StartCoroutine(CalculateDist());
+            }
         }
+
     }
 
     IEnumerator CalculateDist()
@@ -58,5 +71,17 @@ public class Spawner : MonoBehaviour
         }
     }
 
-  
+    private bool checkCanSpawn()
+    {
+        if (enemyCap > enemyNum)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+
 }
