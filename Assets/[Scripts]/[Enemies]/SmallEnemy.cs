@@ -180,6 +180,11 @@ public class SmallEnemy : MonoBehaviour
         {
             collision.gameObject.GetComponent<PlayerMovement>().HurtPlayer(damage);
         }
+
+        if (collision.gameObject.tag == "Bullet")
+        {
+            Hurt(collision.gameObject.GetComponent<Bullet>().damage);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

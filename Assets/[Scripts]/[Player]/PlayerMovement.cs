@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -20,7 +21,11 @@ public class PlayerMovement : MonoBehaviour
     public int currency;
 
     [Header("GameOver")]
-    GameObject gameoverScreen;
+    public float endTime = 60;
+    float timer = 0f;
+    public TextMeshProUGUI scoreText;
+    public Slider timerSlider;
+    public GameObject gameoverScreen;
     static public PlayerMovement instance;
 
     [Header("Sound Effects")]
@@ -44,6 +49,9 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.LogError("Rigidbody2D is NULL!");
         }
+
+        timerSlider.value = timer;
+        timerSlider.maxValue = endTime;
 
         currentHealth = maxHealth;
         if (healthBar)
@@ -78,8 +86,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        timer += Time.deltaTime;
         UpdateUI();
         
+        if (timer >= endTime)
+        {
+            Die();
+        }
+
         if (currentHealth <= 0)
         {
             currentHealth = 0;
@@ -110,10 +124,14 @@ public class PlayerMovement : MonoBehaviour
     void UpdateUI()
     {
         healthBar.value = currentHealth;
+
+        timerSlider.value = timer;
+        
     }
 
     void Die()
     {
+        Time.timeScale = 0;
         PlaySoundEffect(deathSound);
         if (gameoverScreen)
         {
