@@ -9,6 +9,8 @@ public class EnemySpawns : MonoBehaviour
     private int spawners;
     [SerializeField] Vector2 lowerBounds;
     [SerializeField] Vector2 upperBounds;
+    public int enemyCap = 10;
+    public int enemyCount = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,5 +56,15 @@ public class EnemySpawns : MonoBehaviour
         {
             canSpawn = true;
         }
+    }
+
+    public int GetEnemyCap()
+    {
+        return enemyCap;
+    }
+
+    public int GetEnemyCount()
+    {
+        return enemyCount;
     }
 }
