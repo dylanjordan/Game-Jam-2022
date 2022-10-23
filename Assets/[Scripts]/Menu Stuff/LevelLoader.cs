@@ -17,19 +17,19 @@ public class LevelLoader : MonoBehaviour
 
     IEnumerator SceneLoader()
     {
+        Debug.Log("Loading Scene");
         AsyncOperation operation = SceneManager.LoadSceneAsync("MainMenu");
         //SceneManager.GetActiveScene().buildIndex + 1)
-        operation.allowSceneActivation = false;
+        //operation.allowSceneActivation = false;
         while (!operation.isDone)
         {
             slider.value = operation.progress * 100;
-            if (operation.progress >= 0.95f)
-            {
-                operation.allowSceneActivation = true;
-            }
+            Debug.Log("Progress: " + slider.value);
+            
            
             yield return null;
             
         }
+        
     }
 }
