@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Pathfinding;
 
 public class SmallEnemy : MonoBehaviour
 {
-    GameObject player;
-    private Rigidbody2D rb;
+    AIDestinationSetter seeker;
+    public AIPath aiStats;
+    public OverallEnemyPathfindingAI ai;
+
+    Transform playerPos;
 
     public int currency = 5;
 
@@ -32,6 +36,7 @@ public class SmallEnemy : MonoBehaviour
     public float bulletSpeed;
     public float reloadTime;
     float reloadtimer;
+    float logan;
 
     [Header("Sounds")]
     [SerializeField] AudioClip hurtSound;
@@ -47,37 +52,42 @@ public class SmallEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        seeker = GetComponent<AIDestinationSetter>();
         health = maxHealth;
         healthbar.maxValue = maxHealth;
         healthbar.value = health;
-        player = FindObjectOfType<PlayerMovement>().gameObject;
-        rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        logan = 2;
     }
+
 
     // Update is called once per frame
     void Update()
     {
+        playerPos = PlayerMovement.instance.transform;
+
         if (showHealthbar)
         {
             UpdateHealthBar();
         }
 
-        Follow();
-        if (canSeePlayer)
+        if (ai.GetRangeBool())
         {
-            
-
-            if (charge)
-            {
-                Charge();
-            }
-
-            if (shoot)
-            {
-                Shoot();
-            }
+            Follow();
         }
+        else
+        {
+            aiStats.maxSpeed = 2;
+        }
+
+
+
+
+        //if (shoot)
+        //{
+        //    Shoot();
+        //}
+
     }
 
     public void Hurt(int value)
@@ -96,39 +106,52 @@ public class SmallEnemy : MonoBehaviour
 
     void Follow()
     {
-        Vector3 direction = player.transform.position - transform.position;
-        animator.SetFloat("moveX", direction.x);
-        animator.SetFloat("moveY", direction.y);
-        rb.velocity = direction.normalized * speed * Time.deltaTime;
+
+        //Vector3 direction = player.transform.position - transform.position;
+        //Debug.LogWarning("Following Player");
+        //animator.SetFloat("moveX", direction.x);
+        //animator.SetFloat("moveY", direction.y);
+        seeker.target = playerPos;
+
+        Charge();
     }
+
+
 
     void Charge()
     {
-        Vector3 direction = player.transform.position;
-
-        chargetimer += Time.deltaTime;
-        if (chargetimer >= chargeTime)
-        {
-            chargetimer = 0;
-            rb.velocity = direction.normalized * chargespeed;
-        }
+        StartCoroutine(chargeTimer());
     }
 
-    void Shoot()
+    IEnumerator chargeTimer()
     {
-        reloadtimer += Time.deltaTime;
-        if (reloadtimer >= reloadTime)
-        {
-            Vector3 direction = player.transform.position - transform.position;
+        aiStats.maxSpeed = 0;
+        yield return new WaitForSeconds(2);
 
-            GameObject obj = Instantiate(bullet, transform.position, Quaternion.identity);
-            obj.GetComponent<Rigidbody2D>().velocity = direction.normalized * bulletSpeed;
-
-            PlaySoundEffect(shootSound);
-            Destroy(obj, 5f);
-        }
-        
+        StartCoroutine(runningTime());
     }
+
+    IEnumerator runningTime()
+    {
+        aiStats.maxSpeed = 10;
+        yield return new WaitForSeconds(2);
+        aiStats.maxSpeed = 0;
+    }
+    //void Shoot()
+    //{
+    //    reloadtimer += Time.deltaTime;
+    //    if (reloadtimer >= reloadTime)
+    //    {
+    //        Vector3 direction = player.transform.position - transform.position;
+
+    //        GameObject obj = Instantiate(bullet, transform.position, Quaternion.identity);
+    //        obj.GetComponent<Rigidbody2D>().velocity = direction.normalized * bulletSpeed;
+
+    //        PlaySoundEffect(shootSound);
+    //        Destroy(obj, 5f);
+    //    }
+
+    //}
 
     void Die()
     {
