@@ -299,6 +299,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1371692519}
   - component: {fileID: 1371692518}
+  - component: {fileID: 1371692520}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -342,6 +343,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1371692520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371692517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a77b7265f3f4e49b0a1f6869cf650d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prefab: {fileID: 8391443190342261954, guid: 76eff5d9a1abf384382d7ac67afc154d, type: 3}
+  lowerBounds: {x: 0, y: 0}
+  upperBounds: {x: 250, y: 180}
 --- !u!1 &2117634850
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +453,7 @@ GameObject:
   - component: {fileID: 2141428473}
   - component: {fileID: 2141428471}
   - component: {fileID: 2141428472}
+  - component: {fileID: 2141428474}
   m_Layer: 0
   m_Name: Hill Tilemap
   m_TagString: Untagged
@@ -546,3 +563,19 @@ Transform:
   m_Father: {fileID: 1059499351}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!19719996 &2141428474
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141428470}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
