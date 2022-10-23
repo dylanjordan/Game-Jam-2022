@@ -13,6 +13,10 @@ public class PlayerMovement : MonoBehaviour
     public int currentHealth;
     public int maxHealth;
     public Slider healthBar;
+    bool canBeHit = true;
+    public float invicibilityTime;
+    float invicibilityTimer;
+    
 
     [Header("GameOver")]
     GameObject gameoverScreen;
@@ -66,6 +70,25 @@ public class PlayerMovement : MonoBehaviour
             currentHealth = 0;
             Die();
         }
+
+        if (!canBeHit)
+        {
+            invicibilityTimer += Time.deltaTime;
+            if (invicibilityTimer >= invicibilityTime)
+            {
+                canBeHit = true;
+                invicibilityTimer = 0;
+            }
+        }
+    }
+
+    public void HurtPlayer(int val)
+    {
+        if (canBeHit)
+        {
+            currentHealth -= val;
+            
+        }
     }
 
     void UpdateUI()
@@ -75,6 +98,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Die()
     {
-        gameoverScreen.SetActive(true);
+        if (gameoverScreen)
+        {
+            gameoverScreen.SetActive(true);
+        }
+        else
+        {
+            Debug.LogWarning("No Gameover Screen");
+        }
+        
     }
 }

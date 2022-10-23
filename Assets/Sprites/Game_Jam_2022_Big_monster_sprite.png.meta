@@ -1,0 +1,665 @@
+fileFormatVersion: 2
+guid: 02fdf72e79731eb4faab50079696121a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 324
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2fb5e69f16cea438da0ab79377c0fc
+      internalID: 1816096919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 324
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570279f45ca495b4288cf0c3e5d140ed
+      internalID: 331703856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 323
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cc8e45ec09ed24fb1cb2ea61f7013a
+      internalID: 1148418574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 326
+        width: 23
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd2252cd6bf2bd448e435298804bc98
+      internalID: 1936006837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 326
+        width: 23
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c035253ca53ddc940a3309e75d183e16
+      internalID: 1629276675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 256
+        width: 50
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9fa1392487c114e968ad79c37a2df5
+      internalID: 4075474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 255
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b628224f7615c0d4fbe4ee9395c7de0e
+      internalID: 2029586610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 255
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478f71fcd82ddfe4783a89e34c5fbc63
+      internalID: 2098726638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 263
+        width: 23
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26ebb99c40f6f24ab4f2c8f6fb6519c
+      internalID: 1099764426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 263
+        width: 23
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b619c727a67d44686953dcb8ea3eb4
+      internalID: -651190739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 193
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10444b0d8904d7747b51f8d11e6e8520
+      internalID: -875935729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 222
+        width: 53
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01ce4b8fb23fab49aa45094c916403b
+      internalID: -465333780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 206
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac1fc8f3d8a5974999e3ab487029b29
+      internalID: 328103439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 92
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ec87f9dda6efc4386518162a6ba7e1
+      internalID: -1477079284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_14
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 151
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760cb635943642a4295a9d6627df8f54
+      internalID: 1047183754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_15
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 152
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5ebe6c36870ec48bf7f7d76ce02546
+      internalID: 1022173658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_16
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 142
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e6382e8bf95b447bf828f35d5f19cd
+      internalID: 360187231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 142
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c772e7c9ad855804cbd9c67fb08091f1
+      internalID: -418220367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_18
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 11
+        width: 48
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0171dd5621c78a843817f4529c38537f
+      internalID: -1198234676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_19
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 83
+        width: 75
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d81199e687fad1489a382f4858afef8
+      internalID: 708086649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_20
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 81
+        width: 75
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264d9714a428e664a853e51150997acf
+      internalID: -2128853961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_21
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 81
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cb1a0e4116ee84baf9ded75c9ce9b1
+      internalID: -38854779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_22
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 81
+        width: 39
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d2ad856adc63d45bb33d17db73a0e0
+      internalID: 1642802371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Game_Jam_2022_Big_monster_sprite_25
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 206
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca38c00607fbdd41af1c0e927aeebe4
+      internalID: 1384017856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Game_Jam_2022_Big_monster_sprite_19: 708086649
+      Game_Jam_2022_Big_monster_sprite_23: 2057462356
+      Game_Jam_2022_Big_monster_sprite_24: -1486349084
+      Game_Jam_2022_Big_monster_sprite_3: 1936006837
+      Game_Jam_2022_Big_monster_sprite_1: 331703856
+      Game_Jam_2022_Big_monster_sprite_8: 1099764426
+      Game_Jam_2022_Big_monster_sprite_14: 1047183754
+      Game_Jam_2022_Big_monster_sprite_20: -2128853961
+      Game_Jam_2022_Big_monster_sprite_10: -875935729
+      Game_Jam_2022_Big_monster_sprite_16: 360187231
+      Game_Jam_2022_Big_monster_sprite_17: -418220367
+      Game_Jam_2022_Big_monster_sprite_21: -38854779
+      Game_Jam_2022_Big_monster_sprite_6: 2029586610
+      Game_Jam_2022_Big_monster_sprite_5: 4075474
+      Game_Jam_2022_Big_monster_sprite_11: -465333780
+      Game_Jam_2022_Big_monster_sprite_9: -651190739
+      Game_Jam_2022_Big_monster_sprite_12: 328103439
+      Game_Jam_2022_Big_monster_sprite_25: 1384017856
+      Game_Jam_2022_Big_monster_sprite_0: 1816096919
+      Game_Jam_2022_Big_monster_sprite_7: 2098726638
+      Game_Jam_2022_Big_monster_sprite_13: -1477079284
+      Game_Jam_2022_Big_monster_sprite_22: 1642802371
+      Game_Jam_2022_Big_monster_sprite_4: 1629276675
+      Game_Jam_2022_Big_monster_sprite_18: -1198234676
+      Game_Jam_2022_Big_monster_sprite_15: 1022173658
+      Game_Jam_2022_Big_monster_sprite_2: 1148418574
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
