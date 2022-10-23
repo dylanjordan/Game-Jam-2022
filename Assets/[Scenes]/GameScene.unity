@@ -505,6 +505,7 @@ GameObject:
   - component: {fileID: 1371692519}
   - component: {fileID: 1371692518}
   - component: {fileID: 1371692520}
+  - component: {fileID: 1371692521}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -565,6 +566,33 @@ MonoBehaviour:
   upperBounds: {x: 250, y: 180}
   enemyCap: 0
   enemyCount: 0
+--- !u!114 &1371692521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371692517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64b82dc329a39c546a2f7346752c4c81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - name: 
+    enemy: {fileID: 0}
+    count: 0
+    rate: 0
+  - name: 
+    enemy: {fileID: 0}
+    count: 0
+    rate: 0
+  - name: 
+    enemy: {fileID: 0}
+    count: 0
+    rate: 0
+  timeBetweenWaves: 5
+  waveCountdown: 0
 --- !u!1 &1393564667
 GameObject:
   m_ObjectHideFlags: 0

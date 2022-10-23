@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    EnemySpawns enemy;
+    public EnemySpawns enemy;
     private bool canSpawn = true;
     private float distance;
     private float spawnRate;
@@ -83,5 +83,5 @@ public class Spawner : MonoBehaviour
         }
     }
 
-
+    
 }
