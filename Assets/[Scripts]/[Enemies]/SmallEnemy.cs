@@ -104,7 +104,8 @@ public class SmallEnemy : MonoBehaviour
 
         if (health <= 0)
         {
-            GetComponent<PlayerMovement>().score += currency;
+            
+            GiftPlayer();
             Die();
         }
     }
@@ -127,6 +128,11 @@ public class SmallEnemy : MonoBehaviour
     void Charge()
     {
         StartCoroutine(chargeTimer());
+    }
+
+    void GiftPlayer()
+    {
+        FindObjectOfType<PlayerMovement>().score += currency;
     }
 
     IEnumerator chargeTimer()
@@ -166,7 +172,7 @@ public class SmallEnemy : MonoBehaviour
     void Die()
     {
         PlaySoundEffect(deathSound);
-        
+        Debug.Log("Died");
         Destroy(this.gameObject);
     }
 

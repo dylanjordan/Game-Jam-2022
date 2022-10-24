@@ -553,7 +553,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &502015193
 Transform:
   m_ObjectHideFlags: 0
@@ -1336,7 +1336,7 @@ MonoBehaviour:
   Prefab: {fileID: 8391443190342261954, guid: 76eff5d9a1abf384382d7ac67afc154d, type: 3}
   lowerBounds: {x: 0, y: 0}
   upperBounds: {x: 250, y: 180}
-  enemyCap: 10
+  enemyCap: 8
   enemyCount: 0
 --- !u!114 &1371692522
 MonoBehaviour:
@@ -1370,7 +1370,7 @@ MonoBehaviour:
   - {fileID: 550303119615847085, guid: 30df80c4326353f4dbb6cb04c4967c8f, type: 3}
   _spawnPoints: []
   _desiredEnemies: 200
-  _spawnRate: 2
+  _spawnRate: 0.5
 --- !u!114 &1371692524
 MonoBehaviour:
   m_ObjectHideFlags: 0
