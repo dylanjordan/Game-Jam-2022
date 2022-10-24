@@ -48,7 +48,7 @@ public class EnemySpawns : MonoBehaviour
 
     void CheckIfCanSpawn()
     {
-        if (spawners > 10)
+        if (spawners > enemyCap)
         {
             canSpawn = false;
         }

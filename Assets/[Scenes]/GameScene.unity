@@ -580,7 +580,7 @@ GameObject:
   - component: {fileID: 631453193}
   - component: {fileID: 631453192}
   - component: {fileID: 631453191}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Square (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -691,7 +691,7 @@ GameObject:
   - component: {fileID: 883164193}
   - component: {fileID: 883164192}
   - component: {fileID: 883164191}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1077,7 +1077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACYn+vYqcpAZAIAABcFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMziVjE0Kht9YhpAcSJqSTiy+ytcYaZMmjDz6S4b93JdvYpSfE27e7b59W/iJcmhpyq/RKc7ZWDMiPEfFn8m3UB5/hRHdKbvkndJwPzmzpSTRw3qjlCvHYpxlVgdU8/yl3wpMjBJ3khdLVku0gUcYahAsqDGBIK+uzJUJfI3LCn/HCp5zxNPnuT594WkSjCx5zkBZ0T40ns5Y6j1tmQ3QyF7SqgXnVPX8yu5aeNUSJE7UcXyFXQnDTyiH2XIdxE1obh8MggXGK4wUN8d09AiXwXWl9xWH6a1EYsO30mp4fuUafmrrkl2rMq6jZN9oOVDjfaR40NSXX/0XHcQgXWlXPXdc48h1syfP9Gz3n1NiBt0P4cSA8GHSkYk8zAR8lyBe10spJhkGrnU91BiaP/d/rYEkJ+b7HG6k3oKt7xzu/u4v0M1zC7KdE8CrzobtpA2yFCn6H+weNN/MbBYftMG0JRL2KPwbe6W64Rm3giWtjMdROKb28TDntqWQZPPPTOJsoLSHAregaJBX2vMEy9vYCb2KDtjeRJ+ofTNu8jXXv4CYlwD0/im5CG3W8XpYp1XENpnx1VnAJvWgfeEGfEiVls19DT7q0rdMFzQdpO8fZv6tFpgXNivkDyxezYj7N4vGkWDws7uNoGrEsu48pCbvHJc5JxaYR2tqDtyb74hL3rPuOjFaa1mHXmabHFf+s1MByLgu1zTWAfG0qXIWDxib4KtmScTRoC9ZyGe6bfKVEqHwPLL0WSsOky5PVNO2rpKTmB2U9kpIkfDhS4uHrLm80HDgcffOu2IVc/gJQSwMEFAAACAgAAJif69ZU8mltAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSMzTXUVBKL0osyCgGihiCOKWZKSB2tJJJWmJSmoVpSrKlWZqFSZKhrlGapamlsaGBiUFKUpKxYaJSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAJif69ipykBkAgAAFwUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAJif69ZU8mltAAAAeAAAAAkAJAAAAAAAAAAAAAAAsQIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABpAwAAAAA=
+    dataString: UEsDBBQAAAgIAACYn+tgzogbYwIAABgFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMziVjE0Kht9YhpAcSJqSTiy+ytcYaZMmjDz6S4b93JdvYpSfEe293365W/iJcmhpyq/RKc7ZWDMiPEfFn8m3Uk89wojslt/wTOs0HZ7b0Iho0b9RyhXjsw4yqwGqe/5Q74cURgk7yQulqyXaQKGMNwgUVBpDSyvpoidDXiJzwZ7zwIWc8Tb770yeeFtHogsccpAXdS+PJrJXO41bZCJ3MBa1qYN51r5/MrqlnjVBiR63GZ8iVENy0dog916HdhNbGYTMoYJxie8FDfHePQAl8V1qfcRj+WhQGbNu9pudHrnFOTV7ySzXDq6jZN94OVDhfaR48NSnX/7HjONCFVtVzVzWOfAVb8nz/Rs85NXYw2yH8ODAeBnSkYk8zAR8lyBe10spJhqTVzoc6A5PH/u+1saSEfN/jjdUb0NX9xLt5dxfpe7iE3k+J4FXmqbtpA2yFCvMO9w8ab+Y3Gg7bYdoUiHoXfwy8091wjVriiWtjkWq7lN5eppz2UrIMM/PdOJsoLSHArekaJBX2vME09vYCb7hB2RvmifoH0xZvue4d3IQEuNdH0Q21UcfrZZlSHddgyldnBZfQm/bEC84pUVI2+zWcSRe2dbqg+SBs5zj7d7XItKBZMX9g+WJWzKdZPJ4Ui4fFfRxNI5Zl9zElYfe4xD6p2DRG2/Hgrck+ucQ9674jo5Wmddh1pulxxT8rNTTIZaG2uQaQr02Kq3PQWAWfJVsyjhPagrVchgsnXykRKt8DS68109Dq8mQ1TfssKan5QVmPpCQJX46UePi6zBsNBw5HX7xLdiGXv1BLAwQUAAAICAAAmJ/r1lTyaW0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0kklaYlKahWlKsqVZmoVJkqGuUZqlqaWxoYGJQUpSkrFholIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAmJ/rYM6IG2MCAAAYBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAmJ/r1lTyaW0AAAB4AAAACQAkAAAAAAAAAAAAAACwAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAGgDAAAAAA==
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -1277,6 +1277,7 @@ GameObject:
   - component: {fileID: 1371692520}
   - component: {fileID: 1371692523}
   - component: {fileID: 1371692522}
+  - component: {fileID: 1371692525}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1335,7 +1336,7 @@ MonoBehaviour:
   Prefab: {fileID: 8391443190342261954, guid: 76eff5d9a1abf384382d7ac67afc154d, type: 3}
   lowerBounds: {x: 0, y: 0}
   upperBounds: {x: 250, y: 180}
-  enemyCap: 5
+  enemyCap: 10
   enemyCount: 0
 --- !u!114 &1371692522
 MonoBehaviour:
@@ -1387,6 +1388,102 @@ MonoBehaviour:
   upperBounds: {x: 250, y: 180}
   enemyCap: 1
   enemyCount: 0
+--- !u!82 &1371692525
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371692517}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 28fda247e387c424e9c38a2deef25cc7, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.719
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1461422102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1681,7 +1778,7 @@ GameObject:
   - component: {fileID: 1616821921}
   - component: {fileID: 1616821920}
   - component: {fileID: 1616821919}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Square (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1868,7 +1965,7 @@ GameObject:
   - component: {fileID: 1803059308}
   - component: {fileID: 1803059307}
   - component: {fileID: 1803059306}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Square (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

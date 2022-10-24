@@ -109,11 +109,11 @@ MonoBehaviour:
   ai: {fileID: 7713411040016004519}
   playerPos: {fileID: 0}
   currency: 5
-  maxHealth: 5
+  maxHealth: 7
   healthbar: {fileID: 6190633931768283115}
-  damage: 2
+  damage: 3
   canSeePlayer: 0
-  speed: 4
+  speed: 2
   charge: 0
   chargespeed: 0
   chargeTime: 0
@@ -121,8 +121,8 @@ MonoBehaviour:
   bullet: {fileID: 0}
   bulletSpeed: 0
   reloadTime: 0
-  hurtSound: {fileID: 0}
-  deathSound: {fileID: 0}
+  hurtSound: {fileID: 8300000, guid: cd91f18cfce51914096a76736e6d2cfe, type: 3}
+  deathSound: {fileID: 8300000, guid: 910eb5b49ebe8124086a2058d3819480, type: 3}
   spawnSound: {fileID: 0}
   shootSound: {fileID: 0}
 --- !u!95 &1356254503048311255

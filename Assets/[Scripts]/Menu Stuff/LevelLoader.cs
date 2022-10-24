@@ -8,6 +8,7 @@ public class LevelLoader : MonoBehaviour
 {
     public Slider slider;
     public string sceneName = "GameScene";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,7 @@ public class LevelLoader : MonoBehaviour
             yield return null;
             
         }
+        yield return new WaitForSeconds(5);
         
     }
 }

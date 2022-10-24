@@ -297,8 +297,8 @@ MonoBehaviour:
   aiStats: {fileID: 1490904288503652259}
   ai: {fileID: 8159719159490225311}
   playerPos: {fileID: 0}
-  currency: 5
-  maxHealth: 5
+  currency: 2
+  maxHealth: 2
   healthbar: {fileID: 5407393967483233171}
   damage: 2
   canSeePlayer: 0
@@ -310,8 +310,8 @@ MonoBehaviour:
   bullet: {fileID: 0}
   bulletSpeed: 0
   reloadTime: 0
-  hurtSound: {fileID: 0}
-  deathSound: {fileID: 0}
+  hurtSound: {fileID: 8300000, guid: cd91f18cfce51914096a76736e6d2cfe, type: 3}
+  deathSound: {fileID: 8300000, guid: 910eb5b49ebe8124086a2058d3819480, type: 3}
   spawnSound: {fileID: 0}
   shootSound: {fileID: 0}
 --- !u!95 &5407393967068577003

@@ -66,6 +66,7 @@ public class SmallEnemy : MonoBehaviour
     {
         playerPos = PlayerMovement.instance.transform;
 
+        UpdateHealthBar();
         if (showHealthbar)
         {
             UpdateHealthBar();
@@ -103,6 +104,7 @@ public class SmallEnemy : MonoBehaviour
 
         if (health <= 0)
         {
+            GetComponent<PlayerMovement>().score += currency;
             Die();
         }
     }
@@ -140,8 +142,8 @@ public class SmallEnemy : MonoBehaviour
     IEnumerator runningTime()
     {
         Debug.LogWarning("Running");
-        aiStats.maxSpeed = 8;
-        yield return new WaitForSeconds(3);
+        aiStats.maxSpeed = 6;
+        yield return new WaitForSeconds(1);
         aiStats.maxSpeed = 0;
         StartCoroutine(chargeTimer());
     }
@@ -164,6 +166,7 @@ public class SmallEnemy : MonoBehaviour
     void Die()
     {
         PlaySoundEffect(deathSound);
+        
         Destroy(this.gameObject);
     }
 
