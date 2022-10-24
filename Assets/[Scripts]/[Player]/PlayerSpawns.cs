@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawns : MonoBehaviour
+public class PlayerSpawns : MonoBehaviour
 {
     [SerializeField] GameObject Prefab;
     private bool canSpawn = true;
@@ -17,15 +17,15 @@ public class EnemySpawns : MonoBehaviour
         IEnumerator Spawning()
         {
             yield return new WaitForSeconds(1);
-            
+
             if (canSpawn)
             {
-                for (int i = 0; i < enemyCap;)
+                for (int i = 0; i <= 0;)
                 {
                     Vector2 pos = new Vector2(Random.Range(lowerBounds.x, upperBounds.x),
                         Random.Range(lowerBounds.y, upperBounds.y));
                     RaycastHit2D ray = Physics2D.CircleCast(pos, 1, Vector2.one);
-                    
+
                     if (!ray)
                     {
                         Debug.Log("hit nothing");
@@ -48,7 +48,7 @@ public class EnemySpawns : MonoBehaviour
 
     void CheckIfCanSpawn()
     {
-        if (spawners > 10)
+        if (spawners >= 1)
         {
             canSpawn = false;
         }

@@ -23,7 +23,7 @@ public class OverallEnemyPathfindingAI : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float range = 15.0f;
+        float range = 10.0f;
         if (Vector3.Distance(playerPos.position, transform.position) >= range)
         {
             Debug.LogWarning("Player is NOT in range");

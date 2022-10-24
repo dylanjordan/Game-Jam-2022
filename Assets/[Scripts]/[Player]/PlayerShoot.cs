@@ -6,6 +6,7 @@ public class PlayerShoot : MonoBehaviour
 {
     public GameObject projectile;
     public float projectileSpeed = 100f;
+    public AudioClip shootSound;
 
     private PlayerActions playerActions;
 
@@ -35,7 +36,15 @@ public class PlayerShoot : MonoBehaviour
 
         GameObject obj = Instantiate(projectile, transform.position, Quaternion.identity);
         obj.GetComponent<Rigidbody2D>().velocity = direction.normalized * projectileSpeed;
-
+        PlaySoundEffect(shootSound);
         Destroy(obj, 5f);
+    }
+
+    void PlaySoundEffect(AudioClip sound)
+    {
+        if (sound)
+        {
+            AudioSource.PlayClipAtPoint(sound, this.transform.position);
+        }
     }
 }

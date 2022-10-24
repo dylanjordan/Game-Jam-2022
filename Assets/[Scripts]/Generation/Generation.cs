@@ -25,6 +25,7 @@ public class Generation : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         perlinHeightList = new int[width];
         MapGeneration();
     }

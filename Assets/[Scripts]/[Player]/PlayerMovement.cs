@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("GameOver")]
     public float endTime = 60;
     float timer = 0f;
+    public int score = 0;
     public TextMeshProUGUI scoreText;
     public Slider timerSlider;
     public GameObject gameoverScreen;
@@ -52,6 +53,8 @@ public class PlayerMovement : MonoBehaviour
 
         timerSlider.value = timer;
         timerSlider.maxValue = endTime;
+
+        scoreText.text = "Score: " + score;
 
         currentHealth = maxHealth;
         if (healthBar)
@@ -126,7 +129,9 @@ public class PlayerMovement : MonoBehaviour
         healthBar.value = currentHealth;
 
         timerSlider.value = timer;
-        
+
+        scoreText.text = "Score: " + score;
+
     }
 
     void Die()
@@ -142,6 +147,11 @@ public class PlayerMovement : MonoBehaviour
             Debug.LogWarning("No Gameover Screen");
         }
         
+    }
+
+    public void AddScore(int val)
+    {
+        score += val;
     }
 
     void PlaySoundEffect(AudioClip sound)

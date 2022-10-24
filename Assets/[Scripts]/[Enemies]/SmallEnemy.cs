@@ -95,6 +95,7 @@ public class SmallEnemy : MonoBehaviour
     public void Hurt(int value)
     {
         health -= value;
+        PlaySoundEffect(hurtSound);
         if (!showHealthbar)
         {
             healthbar.gameObject.SetActive(true);
@@ -108,6 +109,7 @@ public class SmallEnemy : MonoBehaviour
 
     void Follow()
     {
+        Debug.LogWarning("Follow");
         seeker.target = playerPos;
 
         Charge();
@@ -127,17 +129,21 @@ public class SmallEnemy : MonoBehaviour
 
     IEnumerator chargeTimer()
     {
-        aiStats.maxSpeed = 0;
+        //aiStats.maxSpeed = 0;
+        Debug.LogWarning("ABO");
         yield return new WaitForSeconds(2);
+        Debug.LogWarning("Charging");
 
         StartCoroutine(runningTime());
     }
 
     IEnumerator runningTime()
     {
-        aiStats.maxSpeed = 10;
-        yield return new WaitForSeconds(5);
+        Debug.LogWarning("Running");
+        aiStats.maxSpeed = 8;
+        yield return new WaitForSeconds(3);
         aiStats.maxSpeed = 0;
+        StartCoroutine(chargeTimer());
     }
     //void Shoot()
     //{
@@ -164,6 +170,7 @@ public class SmallEnemy : MonoBehaviour
     void UpdateHealthBar()
     {
         healthbar.value = health;
+
     }
 
     void PlaySoundEffect(AudioClip sound)

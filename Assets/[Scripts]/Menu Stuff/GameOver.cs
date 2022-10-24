@@ -7,7 +7,7 @@ public class GameOver : MonoBehaviour
 {
     public void RetryButton()
     {
-        SceneManager.LoadScene("LevelLoader");
+        SceneManager.LoadScene("Level Loader");
     }
 
     public void ToTitleButton()

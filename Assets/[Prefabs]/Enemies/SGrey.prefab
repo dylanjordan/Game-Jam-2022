@@ -209,9 +209,9 @@ GameObject:
   - component: {fileID: 4384393658207973532}
   - component: {fileID: 7777195030373530301}
   - component: {fileID: 6437220668503673760}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SGrey
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -304,7 +304,7 @@ MonoBehaviour:
   healthbar: {fileID: 7161378070438759596}
   damage: 2
   canSeePlayer: 0
-  speed: 2
+  speed: 4
   charge: 0
   chargespeed: 0
   chargeTime: 0
@@ -441,7 +441,7 @@ MonoBehaviour:
   repathRateCompatibility: NaN
   canSearchCompability: 0
   orientation: 1
-  enableRotation: 1
+  enableRotation: 0
   autoRepath:
     mode: 2
     interval: 0.5

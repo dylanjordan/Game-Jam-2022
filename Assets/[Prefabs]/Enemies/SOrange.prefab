@@ -18,9 +18,9 @@ GameObject:
   - component: {fileID: 5988235050109994673}
   - component: {fileID: 526170943382448398}
   - component: {fileID: 7713411040016004519}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SOrange
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
   healthbar: {fileID: 6190633931768283115}
   damage: 2
   canSeePlayer: 0
-  speed: 2
+  speed: 4
   charge: 0
   chargespeed: 0
   chargeTime: 0
@@ -250,7 +250,7 @@ MonoBehaviour:
   repathRateCompatibility: NaN
   canSearchCompability: 0
   orientation: 1
-  enableRotation: 1
+  enableRotation: 0
   autoRepath:
     mode: 2
     interval: 0.5

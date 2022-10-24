@@ -207,9 +207,9 @@ GameObject:
   - component: {fileID: 1490904288503652259}
   - component: {fileID: 4865746789463168386}
   - component: {fileID: 8159719159490225311}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SBlue
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -439,7 +439,7 @@ MonoBehaviour:
   repathRateCompatibility: NaN
   canSearchCompability: 0
   orientation: 1
-  enableRotation: 1
+  enableRotation: 0
   autoRepath:
     mode: 2
     interval: 0.5
